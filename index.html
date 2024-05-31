@@ -1,18 +1,26 @@
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text" src="script.js"></script>
+   
 </head>
 <body>
    <div id="colorPickerContainer">
     <h1 class="heading text-center">Color Picker</h1>
     <div class="buttons">
-        <button id="button1" onclick="changeGrey()">#e0e0e0</button>
-        <button id="button2" onclick="changeGreen()">#6fcf97</button>
+        <script type="text" src="/script.js"> function changeGreen(){
+            document.getElementById("colorPickerContainer").style.backgroundColor = "#6fcf97";
+            document.getElementById("Hexcode").style.color = "#e0e0e0";
+            document.getElementById("Hexcode").textContent = "#e0e0e0";
+        
+        }</script>
+        <button id="button1" onclick= "changeGreen()">#e0e0e0</button>
+        
+        <button id="button2" onclick={changeGreen()}>#6fcf97</button>
         <button id="button3" onclick="changeBlue()">#e0e0e0</button>
         <button id="button4" onclick="changePurple()">#e0e0e0</button>
     </div>
@@ -21,6 +29,38 @@
     </div>
     <p>Try clicking on one of the colors above to change the background color of this page!</p>
    </div>
-   <script type="text" src="script.js"></script>
+   <script type="text" src="/script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- <button id="button1" onclick= "changeGreen()">#e0e0e0</button> -->
+	
+    <div id="colorPickerContainer">
+        <h1 class="heading text-center">Color Picker</h1>
+        <div class="buttons">
+            <script type="text/javascript" src="script.js"></script>
+            <button id="button1" onclick= "changeGreen()">#e0e0e0</button>
+            <button id="button2" onclick="changeGrey()">#6fcf97</button>
+            <button id="button3" onclick="changeBlue()">#e0e0e0</button>
+            <button id="button4" onclick="changePurple()">#e0e0e0</button>
+        </div>
+        <div >
+            <p class="backgroundHex">Background color : <span id="Hexcode">#ffff</span></p>
+        </div>
+        <p>Try clicking on one of the colors above to change the background color of this page!</p>
+       </div>
+       
 </body>
 </html>
